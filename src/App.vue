@@ -1,11 +1,7 @@
 <template>
   <div class="app">
-    <MyHeader />
-    <MyGoods
-      v-for="item in goodsList"
-      :key="item.goods_id"
-      :goods="item"
-    />
+    <MyHeader title="购 物 车" background="pink" color="black" />
+    <MyGoods v-for="item in goodsList" :key="item.goods_id" :goods="item" />
     <MyFooter :goodsList="goodsList" />
   </div>
 </template>
